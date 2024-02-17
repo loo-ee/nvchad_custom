@@ -4,6 +4,7 @@ local M = {}
 
 M.general = {
   i = {
+  -- Tab management
     -- go to  beginning and end
     ["<C-b>"] = { "<ESC>^i", "Beginning of line" },
     ["<C-e>"] = { "<End>", "End of line" },
@@ -16,6 +17,11 @@ M.general = {
   },
 
   n = {
+    ["<leader>tt"] = {":tabnew <CR>", "New tab"}, -- Create a new tab
+    ["<leader>tp"] = {":tabprevious <CR>", "Previous tab"}, -- Go to the previous tab
+    ["<leader>tn"] = {":tabnext <CR>", "Next tab"}, -- Go to the next tab
+    ["<leader>tc"] = {":tabclose <CR>", "Close tab"}, -- Close the current tab
+
     ["<Esc>"] = { "<cmd> noh <CR>", "Clear highlights" },
     -- switch between windows
     ["<C-h>"] = { "<C-w>h", "Window left" },

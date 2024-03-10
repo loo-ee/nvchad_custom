@@ -8,7 +8,7 @@
 --
 -- Set the default tab width to  4 spaces for everything except HTML
 vim.cmd [[
-  autocmd FileType * setlocal shiftwidth=4 softtabstop=4 expandtab
-  autocmd FileType html,css,javascript setlocal shiftwidth=2 softtabstop=2 expandtab
+  autocmd FileType * setlocal shiftwidth=2 softtabstop=2 expandtab
+  autocmd FileType python,go setlocal shiftwidth=4 softtabstop=4 expandtab
 ]]
 

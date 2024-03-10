@@ -18,6 +18,7 @@ local plugins = {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+        "rust-analyzer",
         "tailwindcss-language-server",
         "gopls",
         "python-lsp-server",
@@ -60,6 +61,13 @@ local plugins = {
     config = function()
       require "custom.configs.conform"
     end,
+  },
+  {
+    "rust-lang/rust.vim",
+    ft = "rust",
+    init = function()
+      vim.g.rustfmt_autosave = 1
+    end
   },
 
   -- To make a plugin not be loaded

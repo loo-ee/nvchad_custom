@@ -19,6 +19,7 @@ local plugins = {
     opts = {
       ensure_installed = {
         "rust-analyzer",
+        "typescript-language-server",
         "tailwindcss-language-server",
         "gopls",
         "python-lsp-server",

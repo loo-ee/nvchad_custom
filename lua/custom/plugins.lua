@@ -70,6 +70,10 @@ local plugins = {
       vim.g.rustfmt_autosave = 1
     end
   },
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
 
   -- To make a plugin not be loaded
   -- {

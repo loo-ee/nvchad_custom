@@ -21,6 +21,7 @@ local plugins = {
         "rust-analyzer",
         "typescript-language-server",
         "tailwindcss-language-server",
+        "lua-language-server",
         "gopls",
         "python-lsp-server",
         "black",
